@@ -1,0 +1,36 @@
+---
+resources:
+- name: Test_Docker_Source
+  type: docker-image
+  source:
+    repository: awofoluo/navynoblebase
+    tag: ((test_docker_source_version))
+    username: ((test_docker_source_username))
+    password: ((test_docker_source_password))
+- name: repo
+  type: git
+  source:
+    uri: https://github.com/awofoluo/navynoble.git
+    username: ((git_username))
+    password: ((git_password))
+    skip_ssl_verification: true
+- name: Test_Docker_Destination
+  type: docker-image
+  source:
+    repository: awofoluo/navynoblefinal
+    username: ((test_docker_destination_username))
+    password: ((test_docker_destination_password))
+jobs:
+- name: optimized_image_build
+  plan:
+  - get: repo
+    trigger: true
+  - get: Test_Docker_Source
+    trigger: true
+    params: {save: true}
+  - put: Test_Docker_Destination
+    params:
+      load_base: Test_Docker_Source
+      build: repo/docker
+    get_params:
+      skip_download: true
