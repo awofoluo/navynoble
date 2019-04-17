@@ -6,7 +6,7 @@ Strategies include the following (still in progress):
 
 + Testing Concourse settings (**load_base**, **cache/cache-tag**, etc);
 + Testing with [multistage Docker builds](https://docs.docker.com/develop/develop-images/multistage-build/);
-+ Testing with properly versioned docker tags (i.e. without ":latest");
++ Testing with properly versioned docker tags (i.e. without **:latest**);
 + Other (research is still ongoing)
 
 Steps to deploy the build pipeline:
