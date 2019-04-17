@@ -1,4 +1,4 @@
-Started working on pipeline that will optimize build performance. 
+Started working on dummy pipeline that will demonstrate optimized build performance. 
 
 Strategies include the following (still in progress):
 a) Testing Concourse settings ("load_base"/"cache" and "cache-tag"/etc);
