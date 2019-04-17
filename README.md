@@ -6,7 +6,7 @@ Strategies include the following (still in progress):
 
 + Testing Concourse settings (**load_base**, **cache/cache-tag**, etc);
 + Testing with [multistage Docker builds](https://docs.docker.com/develop/develop-images/multistage-build/);
-+ Testing with properly versioned docker tags (i.e. instead of **:latest**) ******;
++ Testing with properly versioned docker tags (i.e. instead of **:latest**); *(NOTE: Might not necessarily improve performance)*
 + Other (research is still ongoing)
 
 Steps to deploy the build pipeline:
@@ -18,4 +18,3 @@ Steps to deploy the build pipeline:
 > fly -t <YOUR_TARGET_ALIAS> watch -j navynoble/optimized_image_build
 ```
 
-****** *(might not necessarily improve performance)*
