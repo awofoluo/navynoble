@@ -9,8 +9,6 @@ Strategies include the following (still in progress):
 + Testing with properly versioned docker tags (i.e. instead of **:latest**) ******;
 + Other (research is still ongoing)
 
-****** *might not necessarily improve performance*
-
 Steps to deploy the build pipeline:
 
 ```
@@ -19,3 +17,5 @@ Steps to deploy the build pipeline:
 > fly -t <YOUR_TARGET_ALIAS> up -p navynoble
 > fly -t <YOUR_TARGET_ALIAS> watch -j navynoble/optimized_image_build
 ```
+
+****** *(might not necessarily improve performance)*
