@@ -4,8 +4,8 @@ Started working on dummy pipeline that will demonstrate optimized build performa
 
 Strategies include the following (still in progress):
 
-+ Testing Concourse settings ("load_base"/"cache" and "cache-tag"/etc);
-+ Testing with multistage Docker builds (https://docs.docker.com/develop/develop-images/multistage-build/);
++ Testing Concourse settings (**load_base**, **cache/cache-tag**, etc);
++ Testing with [multistage Docker builds](https://docs.docker.com/develop/develop-images/multistage-build/);
 + Testing with properly versioned docker tags (i.e. without ":latest");
 + Other (research is still ongoing)
 
