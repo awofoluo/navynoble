@@ -1,4 +1,4 @@
-##OPTIMIZING PIPELINE PERFORMANCE
+## OPTIMIZING PIPELINE PERFORMANCE
 
 Started working on dummy pipeline that will demonstrate optimized build performance. 
 
