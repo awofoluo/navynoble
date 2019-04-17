@@ -9,8 +9,6 @@ Strategies include the following (still in progress):
 + Testing with properly versioned docker tags (i.e. without ":latest");
 + Other (research is still ongoing)
 
-All repos are public.
-
 Steps to deploy the build pipeline:
 
 ```
